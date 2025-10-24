@@ -59,6 +59,10 @@ body {
     text-overflow: ellipsis;
 }
 
+.project-indicator {
+    font-family: inherit;
+}
+
 #header {
     display: flex;   
     margin: 10px;
