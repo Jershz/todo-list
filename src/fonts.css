@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'BBH Sans Bartle';
+    src: url('./BBHSansBartle-Regular.woff2') format('woff2'),
+        url('./BBHSansBartle-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BBH Sans Bogle';
+    src: url('./BBHSansBogle-Regular.woff2') format('woff2'),
+        url('./BBHSansBogle-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Workbench';
+    src: url('./Workbench-Regular.woff2') format('woff2'),
+        url('./Workbench-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

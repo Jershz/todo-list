@@ -1,4 +1,5 @@
 * {
+    font-family: "Workbench";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,52 +8,80 @@
     --darkblue: #023047;
     --teal: #219EBC;
     --lightblue: #8ecae6;
+    --black: rgb(0 0 0);
+    --white: rgb(255 255 255);
 }
 
 body {
     background-color: var(--darkblue);
 }
 
-.body-container {
+#body-container {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 100px 1fr;
     width: 80vw;
     height: 80vh;
-    background-color: var(--lightblue);
+    background-color: var(--black);
     margin: 0 auto;
     margin-top: 10vh;
     border-radius: 16px;
 }
 
-.sidebar {
+#sidebar {
+    display: grid;
+    grid-template-columns: 286px;
     margin: 10px;
     margin-right: 0;
+    margin-top: 0;
     grid-column: 1;
-    grid-row: 1 / -1;
+    grid-row: 2 / -1;
     background-color: var(--orange);
-    -webkit-border-top-left-radius: 16px;
     -webkit-border-bottom-left-radius: 16px;
-    -moz-border-radius-topleft: 16px;
     -moz-border-radius-bottomleft: 16px;
-    border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
 
-.header {
+#projects {
+    padding: 10px;
+}
+
+#projects-title {
+    letter-spacing: 10px;
+}
+
+.project {
+    padding-left: 50px;
+    font-family: "BBH Sans Bogle";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#header {
+    display: flex;   
     margin: 10px;
     margin-bottom: 0;
-    margin-left: 0;
-    grid-column: 2;
+    padding: 10px;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
-    background-color: var(--yellow);
+    background-color: var(--black);
+    color: white;
     -webkit-border-top-right-radius: 16px;
     -moz-border-radius-topright: 16px;
     border-top-right-radius: 16px;
+    -webkit-border-top-left-radius: 16px;
+    -moz-border-radius-topleft: 16px;
+    border-top-left-radius: 16px;
 }
 
-.todo-grid-container {
+#header-title {
+    
+    letter-spacing: 10px;
+}
+
+#todo-grid-container {
     background-color: var(--teal);
     margin-bottom: 10px;
     margin-right: 10px;
