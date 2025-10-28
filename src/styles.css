@@ -30,8 +30,9 @@ body {
 }
 
 #sidebar {
-    display: grid;
-    grid-template-columns: 286px;
+    display: flex;
+    flex-direction: column;
+    max-width: 286px;
     margin: 10px;
     margin-right: 0;
     margin-top: 0;
@@ -44,23 +45,47 @@ body {
 }
 
 #projects {
-    padding: 10px;
+    
 }
 
 #projects-title {
     letter-spacing: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 30px 16px 1fr;
+    padding-left: 10px;
+    max-width: 286px;    
 }
 
 .project {
-    padding-left: 50px;
+    border: none;
+    background: none;    
+    text-align: left;
+    font-size: 1.25rem;
     font-family: "BBH Sans Bogle";
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;    
 }
 
 .project-indicator {
+    display: inline;  
     font-family: inherit;
+    align-self: center;
+}
+
+.project-remove-button {
+    background: none;
+    border: none;
+}
+
+.project-remove-button:hover {
+    color: red;
 }
 
 #header {
